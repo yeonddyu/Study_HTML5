@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function ShowAsk(question1, question2, yes, no, abstain) {
+            if(confirm(question1)) {
+                yes();
+            } else if (confirm(question2)) {
+                abstain();
+            } else {
+                no();
+            }
+ 
+        }
+
+        function CallbackYes() {
+            alert('동의하셨습니다.');
+        }
+        function CallbackNO() {
+            alert('거절하셨습니다.');
+        }
+        function  CallbackAbstain() {
+            alert('기권하셨습니다.');
+        }
+
+        ShowAsk('동의하시겠습니까?', '기권하시겠습니까?', CallbackYes, CallbackNO, CallbackAbstain);
+    </script>
+</head>
+</html>

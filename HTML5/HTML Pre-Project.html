@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Pre-Project</title>
+
+    <!-- 외부 스타일시트 적용 -->
+    <link rel="stylesheet" href="./Pre-Project_Style.css">
+</head>
+<body>
+    <!-- 전체를 감싸는 태그 -->
+    <div id="main-wrapper">
+        <!-- 헤더 -->
+        <header>
+                <img src="header.png" width="50">
+                <span>HYJ Shop</span>
+        </header>
+
+        <!-- 네비게이션 -->
+        <nav id="main-navigation">
+            <ul class="list">
+                <li><a href="./computer.html" target="iframes">Home</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">MY ACCOUNT</a></li>
+                <li><a href="#">CONTACTS</a></li>
+            </ul>
+        </nav>
+
+        <!-- 본문 -->
+        <div id="content">
+            <!-- 카테고리 부분 -->
+            <aside id="left-aside">
+                <h3>카테고리</h3>
+                <ul>
+                    <li><a href="./computer.html" target="iframes">컴퓨터</a></li>
+                    <li><a href="./clothes.html" target="iframes">의류</a></li>
+                    <li><a href="./music.html" target="iframes">음악</a></li>
+                    <li><a href="./movie.html" target="iframes">영화</a></li>
+                    <li><a href="./sports.html" target="iframes">스포츠</a></li>
+                    <li><a href="./leisure.html" target="iframes">레저</a></li>
+                    <li><a href="./interior_design.html" target="iframes">가구/인테리어</a></li>
+                    <li><a href="./foods.html" target="iframes">식품</a></li>
+                </ul>
+            </aside>
+            <!-- 중앙 내용 -->
+            <section id="main-section">
+                <article>
+                    <iframe name="iframes" src="computer.html" frameborder="0" width="700" height="350"></iframe>
+                </article>
+            </section>
+            <!-- 우측 부분 -->
+            <aside id="right-aside">
+                <div id="S-cart">
+                    <h3>Shopping Cart</h3>
+                    <h>현재 쇼핑카트에 물품이 없습니다.</h><br>
+                    <a href="#">쇼핑카트 보기</a>
+                </div>
+
+                <div id="login">
+                    <h3>Log In</h3>
+                    <form>
+                        <h>아이디</h>
+                        <input type="text">
+                        <h>패스워드</h>
+                        <input type="password">
+                        <input type="submit" value="로그인">
+                        <input type="reset" value="초기화"><br>
+
+                        <a href="./membership.html">회원가입</a>
+                        <a href="#">비밀번호 분실</a>
+                    </form>
+                </div>
+            </aside>
+        </div>
+        <!-- 푸터 -->
+        <footer>
+            <h>Copyright & copy; 2023 Sebastian</h>
+        </footer>
+    </div>
+</body>
+</html>

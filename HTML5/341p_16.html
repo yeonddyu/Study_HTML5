@@ -1,0 +1,15 @@
+<!-- 16. 센티미터를 입력하면 피트와 인치로 변환하는 프로그램을 작성하시오. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // 변수 입력
+        let input = parseFloat(prompt('cm 단위를 입력해주세요.', 'cm 입력'));
+        let feet = input / 12;
+        let inch = input / 2.54;
+
+        // 출력
+        alert(input + '은' + feet + '피트' + inch + '인치입니다.');
+    </script>
+</head>
+</html>

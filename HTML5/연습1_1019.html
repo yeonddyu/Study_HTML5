@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example1 1019</title>
+    <style>
+        body { width: 900px; }
+
+        .box {
+            margin: 0px;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            font-size: 20px;
+        }
+
+        #red { overflow: hidden; padding-top: 40px; }
+        #left { 
+            float: left;
+            width: 250px; height: 250px;
+            border: 2px solid red;
+        }
+        #right {
+            float: right;
+            width: 600px; height: 250px;
+            border: 2px solid red;
+        }
+        #blue {
+            float: right;
+            width: 55%; height: 250px;
+            border: 1px solid blue; }
+        
+        img { width: 40% ; height: 60%; border: 1px solid blue; }
+        #line { font-size: 20px; border-bottom: 2px groove;}
+        #year { font-size: 25px; font-weight: bold ; }
+    </style>
+</head>
+<body>
+    <div class="box">기업 연혁</div>
+    <div id="red">
+        <div id="left">
+            <h3>2018 ~ 현재</h3>
+            <h2>환경과 사람을 <br>
+                존중하는 기업 <br>
+                '환경 사랑'</h2>
+            <h4>환경 관련 우수기업 <br>
+                대통령상을 수상하다.</h4>
+        </div>
+        <div id="right">
+            <img src="연습1_1019.jpg">
+            <div id="blue">
+                <p><span id="year">2021</span>
+                    <span id="line">환경사랑 수원 전시장 오픈</span></p>
+                <p><span id="year">2020</span>
+                    <span id="line">환경사랑 광주 전시장 오픈</span></p>
+                <p><span id="year">2019</span>
+                    <span id="line">환경사랑 대전 전시장 오픈</span></p>
+                <p><span id="year">2018</span>
+                    <span id="line">환경사랑 서울 전시장 오픈</span></p> 
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

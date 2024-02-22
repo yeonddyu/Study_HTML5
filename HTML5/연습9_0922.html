@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example2</title>
+</head>
+<body>
+    <h2>회원 가입</h2>
+
+    <form>
+        <p> 아이디 <input type="text" name="id"> </p>
+        <p> 이름 <input type="text" name="name"> </p>
+        <p> 비밀번호 <input type="password" name="pw"> </p>
+        <p> 비밀번호 확인 <input type="password" name="pwc"> </p>
+        <p> 전화번호 <input type="text" name="tel" value="010-1234-5678" required> </p>
+        <p> 이메일 <input type="text" name="email" required> @ 
+                    <select>
+                        <option>직접입력</option>
+                        <option>기타</option>
+                    </select>
+        </p>
+
+        <p> 문자수신 여부 <input type="radio" name="message"> 예
+            <input type="radio" name="message"> 아니오</p>
+
+        <p> 가입 경로 <input type="checkbox" required> 친구 소개
+            <input type="checkbox" required> 인터넷 검색
+            <input type="checkbox" required> 블로그
+            <input type="checkbox" required> 기타</p>
+    
+    </form>
+
+</body>
+</html>

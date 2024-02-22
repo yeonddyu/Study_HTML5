@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example1</title>
+</head>
+<body>
+    <section>
+        <form>
+            <fieldset>
+                <legend>회원등록</legend>
+                <table  border="1">
+                    <caption>회원가입 서식 작성</caption>
+                    <!-- 이름 -->
+                    <tr>
+                        <th>*이름</th>
+                        <td>
+                            <input type="text" name="name"> 
+                        </td>
+                    </tr>
+                    <!-- 사진 -->
+                    <tr>
+                        <th>*사진</th>
+                        <td>
+                            <input type="file" name="photo">
+                        </td>
+                    </tr>
+                    <!-- 아이디 -->
+                    <tr>
+                        <th>*아이디</th>
+                        <td>
+                            <input type="text" name="ID" placeholder="아이디는 8글자 이상.">
+                        </td>
+                    </tr>
+                    <!-- 비밀번호 -->
+                    <tr>
+                        <th>*비밀번호</th>
+                        <td>
+                            <input type="password" name="PW" placeholder="대소문자와 숫자, 특수문자를 적어도 하나씩 사용 10글자 이상." style="width:70%">
+                        </td>
+                    </tr>
+                    <!-- 비밀번호 확인 -->
+                    <tr>
+                        <th>*비밀번호 확인</th>
+                        <td>
+                            <input type="password" name="passwordreturn" style="width:70%">
+                        </td>
+                    </tr>
+                    <!-- 이메일 -->
+                    <tr>
+                        <th>*이메일</th>
+                        <td>
+                            <input type="email" name="email"> @
+                            <select>
+                                <option>naver.com</option>
+                                <option>daum.net</option>
+                                <option>gmail.com</option>
+                                <option>기타</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- 생년월일 -->
+                    <tr>
+                        <th>*생년월일</th>
+                        <td>
+                            <input type="date" name="bday">
+                        </td>
+                    </tr>
+                    <!-- 성별 -->
+                    <tr>
+                        <th>*성별</th>
+                        <td>
+                            <input type="radio" name="gender"> 남성
+                            <input type="radio" name="gender" checked> 여성
+                        </td>
+                    </tr>
+                    <!-- 연락처 -->
+                    <tr>
+                        <th>*연락처1</th>
+                        <td>
+                            <input type="tel" name="tel" placeholder="010-123(4)-5678">
+                        </td>
+                    </tr>
+                    <!-- 주소 -->
+                    <tr>
+                        <th>*주소</th>
+                        <td>
+                            우편번호 : <input type="text" name="address"><br>
+                            도로명 주소 :<br>
+                            <input type="text" name="roadnames" style="width:70%"><br>
+                            상세 주소 : <input type="text" name="detailed">
+                        </td>
+                    </tr>
+                    <!-- 가입경로 -->
+                    <tr>
+                        <th>가입경로</th>
+                        <td>
+                            <select>
+                                <option>지인</option>
+                                <option>검색</option>
+                                <option>기타</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- 취미 -->
+                    <tr>
+                        <th>취미</th>
+                        <td>
+                            <select multiple="multiple">
+                                <option>축구</option>
+                                <option>농구</option>
+                                <option>야구</option>
+                                <option>골프</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- 관심 분야 -->
+                    <tr>
+                        <th>관심 분야</th>
+                        <td>
+                            <input type="checkbox" name="interest" checked> HTML
+                            <input type="checkbox" name="interest"> CSS
+                            <input type="checkbox" name="interest"> Javascript
+                        </td>
+                    </tr>
+                    <!-- 이메일 수신여부 -->
+                    <tr>
+                        <th>이메일 수신여부</th>
+                        <td>
+                            <input type="radio" name="receive" checked> 예
+                            <input type="radio" name="receive"> 아니오
+                        </td>
+                    </tr>
+                    <!-- 버튼 만들기 -->
+                    <tr>
+                        <td colspan="2" width="800" align="center">
+                            <input type="submit" value="전송">
+                            <input type="reset" value="취소">
+                        </td>
+                    </tr>
+                </table>
+            </filedset>
+        </form>
+    </section>
+</body>
+</html>

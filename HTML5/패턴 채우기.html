@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>패턴 채우기</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="300"></canvasd>
+    <script>
+        let canvas = document.getElementById('myCanvas');
+        let context = canvas.getContext('2d');
+
+        let image = new Image();
+        image.src = "pattern.png";
+        image.onload = function() {
+            let pattern = context.createPattern(image, "repeat");
+
+            context.rect(0, 0, canvas.width, canvas.height);
+            context.fillStyle = pattern;
+            context.fill()
+        };
+    </script>
+</body>
+</html>

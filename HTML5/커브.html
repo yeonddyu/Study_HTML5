@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>커브</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="200"></canvasd>
+    <script>
+        let canvas = document.getElementById('myCanvas');
+        let context = canvas.getContext('2d');
+
+        context.beginPath();
+        context.moveTo(90, 180);
+        context.bezierCurveTo(140, 10, 288, 10, 288, 130);
+        context.lintWidth = 10;
+
+        context.strokeStyle = "black";
+        context.stroke();
+    </script>
+</body>
+</html>

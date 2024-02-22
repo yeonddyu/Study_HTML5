@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example2</title>
+    <style>
+        body { 
+            width: 1000px; 
+            position: relative;
+        }
+        
+
+        .box {
+            padding: 10px;
+            background-color: mediumturquoise;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #baking p:first-child {
+            padding: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            border-top: 2px solid black;
+            border-bottom: 2px groove;
+        }
+        #sub { font-size: 13px; }
+
+        #visit { padding: 10px; border: 2px solid mediumturquoise; }
+
+        #title { 
+            padding: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            border-bottom: 2px groove;
+        }
+
+        section { overflow: hidden; }
+        .left { float: left; width: 15%; }
+        .center {
+            float: left;
+            margin-left: 30px;
+            margin-right: 30px;
+            width: 35%; }
+        .right { position: relative; float: left; width: 30%; }
+
+        #top1 { position: absolute; left: 0; top: 60px; }
+        #top2 { position: absolute; right : 0px; top: 60px; }
+        #bottom1 { position: absolute; left: 0; top: 250px; }
+        #bottom2 { position: absolute; right : 0px; top: 250px; }
+
+    </style>
+</head>
+<body>
+    <section>
+        <!-- 왼쪽 부분 -->
+        <article>
+            <div class="left">
+                <h class="box">The 베이킹</h>
+                <p style="font-size: 12px;">안녕하세요. 쿠키와 빵 만들기 정보를 공유하고 소통하는 공간입니다.</p>
+                <form>
+                    <input type="text" name="search"  size=8>
+                    <input type="button" name="search" value="검색">
+                </form>
+                <div id="baking">
+                    <p>베이킹/요리</p>
+                    <p id="sub">쿠키 만들기 </p>
+                    <p id="sub">빵 만들기 </p>
+                    <p id="sub">마카롱 만들기 </p>
+                </div>
+                <div id="visit">
+                    <h3>최근 댓글</h3>
+                    <p id="sub">안녕하세요.</p>
+                    <p id="sub">안녕하세요.</p>
+                    <p id="sub">안녕하세요.</p>
+                </div>
+            </div>
+        </article>
+        <!-- 중간 부분 -->
+        <article>
+            <div class="center">
+                <div>
+                    <p id="title">알림</p>
+                    <p id="sub">8월 3일 쿠킹 클래스 연기합니다.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09.30</p>
+                    <p id="sub">8월 3일 쿠킹 클래스 연기합니다.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09.30</p>
+                    <p id="sub">8월 3일 쿠킹 클래스 연기합니다.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09.30</p>
+                    <p id="sub">8월 3일 쿠킹 클래스 연기합니다.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09.30</p>
+                    <p id="sub">8월 3일 쿠킹 클래스 연기합니다.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09.30</p>
+ 
+                </div>
+                <div>
+                    <p id="title">자유 게시판</p>
+                    <p id="sub">안녕하세요. 반갑습니다.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09.30</p>
+                    <p id="sub">안녕하세요. 반갑습니다.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09.30</p>
+                    <p id="sub">안녕하세요. 반갑습니다.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09.30</p>
+                    <p id="sub">안녕하세요. 반갑습니다.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09.30</p>
+                    <p id="sub">안녕하세요. 반갑습니다.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;09.30</p>
+
+                </div>
+            </div>
+        </article>
+        <!-- 오른쪽 부분 -->
+        <article>
+            <div class="right">
+                <p id="title">제빵클래스</p>
+                <div id="top1">
+                    <img src="doughnuts.jpg" width = "140px", height = "120px">
+                    <p id="sub"><b>도너츠 만들기[3]</b><br>
+                        21.09.30</p>
+                </div>
+                <div id="top2">
+                    <img src="bagels.jpg" width = "140px", height = "120px">
+                    <p id="sub"><b>베이글 만들기[3]</b><br>
+                        21.09.30</p>
+                </div>
+                <div id="bottom1">
+                    <img src="sandwich.jpg" width = "140px", height = "120px">
+                    <p id="sub"><b>샌드위치 만들기[3]</b><br>
+                        21.09.30</p>
+                </div>
+                <div id="bottom2">
+                    <img src="chocolate_muffin.jpg" width = "140px", height = "120px">
+                    <p id="sub"><b>초코머핀 만들기[3]</b><br>
+                        21.09.30</p>
+                </div> 
+            </div>
+        </article>     
+    
+    </section>
+
+</body>
+</html>

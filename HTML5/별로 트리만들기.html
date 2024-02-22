@@ -1,0 +1,20 @@
+<!-- 별로 트리 만들기 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        let asterisk = []
+        for (i = 0; i < 5; i++) {
+            for (k = 2; k > i; k--) {
+                asterisk += ' ';
+            }
+            for (j = 0; j < i; j++) {
+                asterisk += '*';
+            }
+            asterisk += '\n';
+        }
+
+        alert(asterisk)
+    </script>
+</head>
+</html>

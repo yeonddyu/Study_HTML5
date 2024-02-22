@@ -1,0 +1,14 @@
+<!-- 18. 네 자리 정수를 입력받아 천, 백, 십, 일의 자리로 분리해 출력하는 프로그램을 작성하시오. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // 변수 입력
+        let input = parseFloat(prompt("입력해주세요", "입력"));
+
+        // 출력
+        alert('천의 자리는: ' + parseInt(input/1000) + ', 백의 자리는: ' + parseInt(input%1000/100)
+              + ', 십의 자리는: ' + parseInt(input%100/10) + ', 일의 자리는: ' + parseInt(input%10) );
+    </script>
+</head>
+</html>

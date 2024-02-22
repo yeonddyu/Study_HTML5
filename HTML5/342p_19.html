@@ -1,0 +1,16 @@
+<!-- 19. 사용자에게 태어난 연도를 입력받아 그 해의 띠를 출력하는 프로그램을 작성하시오. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // 변수 입력
+        let input = parseFloat(prompt("태어난 연도를 입력해주세요", "입력"));
+        let animals = ['원숭이띠', '닭띠', '개띠', '돼지띠', '쥐띠', '소띠',
+                       '범띠', '토끼띠', '용띠', '뱀띠', '말띠', '양띠'];
+
+        // 출력
+        alert(animals[input % 12] + ' 입니다.')
+
+    </script>
+</head>
+</html>

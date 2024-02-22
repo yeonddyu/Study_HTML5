@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #wrapper {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            grid-template-rows: 100px 200px;
+            margin: 30px
+        }
+
+        .items:nth-child(2n+1) {
+            background-color: #bbb;
+        }
+
+        .items:nth-child(2n) {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="items">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="items">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="items">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="items">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="items">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+    </div>
+</body>
+</html>
